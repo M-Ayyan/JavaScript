@@ -1,22 +1,65 @@
 alert("Hello");
 
-let arr = ["A", "B", "C"] 
-console.log(arr);
+// let firstName = prompt("What is your first name?");
 
-var temp = arr[0]
-console.log(temp);
+// let lastName = prompt("What is your last name?");
 
-arr[0] = arr[2]
-console.log(arr);
+// let fullName = firstName + " " + lastName;
+// alert("Hello, " + fullName + "!");
 
-arr[2] = temp
-console.log("swap reslt", arr);
+// let phoneModel = prompt("What is your mobile phone model?");
 
-// table of 2
+// let modelLength = phoneModel.length;
 
-// document.write(2 + " x + 1 = " + (2 * 1) + "<br>")
-// document.write(2 + " x + 1 = " + (2 * 1))
-// document.write(2 + " x + 1 = " + (2 * 1))
-// document.write(2 + " x + 1 = " + (2 * 1))
-// document.write(2 + " x + 1 = " + (2 * 1))
-// document.write(2 + " x + 1 = " + (2 * 1))
+// alert("The length of your phone model input is: " + modelLength);
+
+// let country = ("pakistani")
+// console.log(country.indexOf('n'));
+// console.log(country);
+
+// let word = ("Hello World");
+// console.log(word.lastIndexOf('l'))
+
+// let character = ("Pakistani")
+// console.log(character.charAt(3));
+
+// let firstName = prompt("What is your first name?");
+
+// let lastName = prompt("What is your last name?");
+
+// let fullName = firstName.concat(" ", lastName);
+// alert("Hello, " + fullName + "!");
+
+// let City = ("Hyderabad")
+// console.log(City.replace("Hyder", "Islam"));
+
+// let message = ("Ali and Sara are bestfreinds.They play Cricket and Football together.")
+// console.log(message.replaceAll("and", "&"));
+
+// let value = 472;
+
+// let type = value.toString()
+
+// console.log("Value:" + type)
+// // console.log("Type:" + typeof type);
+
+// let word = prompt("Enter a word:");
+
+// let uppercaseword = word.toUpperCase();
+
+// console.log("The word in uppercase is: " + upperCaseWord);
+
+// let userinput =+prompt("Enter any word")
+// console.log(userinput)
+
+// function toTitleCase(str) {
+//   return str.toUpperCase() + str.slice(1).toLowerCase();
+// }
+
+// let userInput =+prompt("Enter any word");
+// let titleCase = toTitleCase(userInput);
+// console.log(titleCase);
+var num =+prompt("Enter any number in decimal");
+
+var result = num.toString().replace('.', '');
+console.log(result);
