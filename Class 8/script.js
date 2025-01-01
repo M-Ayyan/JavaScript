@@ -59,6 +59,7 @@ alert("Hello");
 // let userInput =+prompt("Enter any word");
 // let titleCase = toTitleCase(userInput);
 // console.log(titleCase);
+
 var num =+prompt("Enter any number in decimal");
 
 var result = num.toString().replace('.', '');
