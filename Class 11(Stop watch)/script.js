@@ -1,15 +1,25 @@
 var milSec = document.getElementById("mil-sec")
 var Sec = document.getElementById("sec")
 var min = document.getElementById("min")
+var startBtn = document.getElementById("start-btn")
+var resetBtn = document.getElementById("reset-btn")
 var timer;
 let milSecCount = 0
 let secCount = 0
 let minCount = 0
-function start() {
+
+
+
+
+function start(e) {
+
+    startBtn.disabled = true
+
+    
     timer = setInterval(() => {
-        
-        milSecCount = milSecCount + 1
-        
+    
+    milSecCount = milSecCount + 1
+
         
         if (milSecCount < 9) {
 
@@ -37,7 +47,7 @@ function start() {
 
             min.innerHTML = minCount
         }
-        
+
         if (milSecCount == 99) {
             
             secCount = secCount + 1
@@ -50,21 +60,20 @@ function start() {
             min.innerHTML = minCount
             secCount = 0
         }
-
+    
+       
     },10 );
-    // function start(e) {
-    //     startBtn.disabled = true
-    // }
-
-}
-
+    }
+    
 
 function stop() {
     clearInterval(timer);
+    startBtn.disabled = false
 
 }
 
 function reset() {
+    startBtn.disabled = false
     milSecCount = 0
     secCount = 0
     minCount = 0
